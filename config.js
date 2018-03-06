@@ -1,16 +1,5 @@
-const elements = [
-  { title: '形状元素', path: '/elements/base'},
-  { title: '容器元素', path: '/elements/container'},
-  { title: '动画元素', path: '/elements/animate'},
-  { title: '描述性元素', path: '/elements/description'},
-  { title: '滤镜元素', path: '/elements/filter'},
-
-  { title: '渐变元素', path: '/elements/gradient'},
-  { title: '光源元素', path: '/elements/light'},
-  { title: '结构元素', path: '/elements/construction'},
-
-  { title: '文本内容元素', path: '/elements/text'},
-  { title: '未分类元素', path: '/elements/unknow'},
+const apis = [
+  { title: '层次布局', path: '/api/d3-hierarchy'},
 ]
 
 const subjects = [
@@ -34,7 +23,7 @@ docute.init({
   nav: {
     default: [
       {title: '主页', path: '/home'},
-      {title: '类目', path: '/element', type: 'dropdown', items: elements},
+      {title: '类目', path: '/api', type: 'dropdown', items: apis},
       {title: '专题', path: '/attribute', type: 'dropdown', items: subjects},
     ]
   },
